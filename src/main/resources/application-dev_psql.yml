@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: changeme
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+    hibernate:
+      # none, create, update, create-drop
+      ddl-auto: create-drop
+    show-sql: true
+
+    security:
+      user:
+        name: admin
+        password: admin
+        roles: manager

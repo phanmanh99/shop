@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: dev_psql
+  swagger-ui:
+    path: /swagger-ui.html
