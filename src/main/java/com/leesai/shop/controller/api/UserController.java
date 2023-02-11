@@ -37,14 +37,14 @@ public class UserController {
   //   return ResponseEntity.ok().body(userService.getByEmail(email));
   // }
 
-  @GetMapping("")
-  public ResponseEntity<?> search(
-      @RequestParam Optional<UUID> id, @RequestParam Optional<String> email) {
-    HashMap<String, String> text = new HashMap<>();
-    text.put("id", id.toString());
-    text.put("email", email.toString());
-    return ResponseEntity.ok().body(text);
-  }
+  // @GetMapping("")
+  // public ResponseEntity<?> search(
+  //     @RequestParam Optional<UUID> id, @RequestParam Optional<String> email) {
+  //   HashMap<String, String> text = new HashMap<>();
+  //   text.put("id", id.toString());
+  //   text.put("email", email.toString());
+  //   return ResponseEntity.ok().body(text);
+  // }
 
   @PostMapping()
   public ResponseEntity<Optional<User>> create(@RequestBody User user) {
