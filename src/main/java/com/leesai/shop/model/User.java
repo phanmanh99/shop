@@ -50,7 +50,7 @@ public class User implements UserDetails {
   @Nullable
   private String password;
 
-  @Column(columnDefinition = "varchar(4) default 'USER")
+  @Column(columnDefinition = "char(4) default 'USER'")
   @Enumerated(EnumType.STRING)
   private Role role;
 
