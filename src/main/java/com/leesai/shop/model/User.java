@@ -39,14 +39,14 @@ public class User implements UserDetails {
   @Column(name = "lastName")
   private String lastName;
 
-  @Column(name = "age")
+  @Column(name = "age", columnDefinition = "integer default 18")
   private int age;
 
   @Column(name = "email")
   @Nullable
   private String email;
 
-  @Column(name = "password")
+  @Column(name = "password", columnDefinition = "char(64) default '123456'")
   @Nullable
   private String password;
 
